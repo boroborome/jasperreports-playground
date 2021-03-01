@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.14.0.final using JasperReports Library version 6.14.0-2ab0d8625be255bf609c78e1181801213e51db8f  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AfterSalesInvoiceReport" pageWidth="594" pageHeight="842" columnWidth="542" leftMargin="26" rightMargin="26" topMargin="11" bottomMargin="11" uuid="cbc4db19-94ba-4476-b0b6-b84858c680db">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="headerGridValue" vTextAlign="Middle">
+		<paragraph leftIndent="3"/>
+	</style>
+	<style name="headerGridTitle" forecolor="#4A4A4A" vTextAlign="Middle" fontName="MBLight" fontSize="7">
+		<box leftPadding="5" rightPadding="0">
+			<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#666666"/>
+			<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#666666"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#666666"/>
+			<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#666666"/>
+		</box>
+	</style>
+	<style name="headerGridValue1Col" forecolor="#000000" vTextAlign="Middle" fontName="MB" fontSize="8">
+		<box>
+			<pen lineColor="#666666"/>
+			<topPen lineWidth="0.5"/>
+			<bottomPen lineWidth="0.5"/>
+		</box>
+		<paragraph leftIndent="3"/>
+	</style>
+	<style name="footerDescFont" forecolor="#000000" fontName="MB" fontSize="6"/>
+	<style name="footerCompanyInfo" forecolor="#000000" fontName="MB" fontSize="7"/>
+	<style name="headerTitle" forecolor="#000000" fontName="MB" fontSize="20" isBold="true"/>
+	<style name="headerInvoiceType" forecolor="#000000" hTextAlign="Left" vTextAlign="Middle" fontName="MB" fontSize="13" isBold="true"/>
+	<style name="headerPageNumber" forecolor="#000000" vTextAlign="Middle" fontName="MB" fontSize="13"/>
+	<style name="headerLightFont" forecolor="#4A4A4A" fontName="MBLight" fontSize="7"/>
+	<style name="detailTotalFont" forecolor="#000000" fontName="MB" fontSize="8.5"/>
+	<style name="footerSignFont" fontName="MB" fontSize="7"/>
+	<style name="remark" style="headerGridTitle" fontName="MB" fontSize="8.5"/>
+	<parameter name="headup" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="307" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<frame>
+				<reportElement style="headerGridValue" x="0" y="0" width="542" height="18" uuid="feaf76ef-a63d-4bff-962d-9f93f9a95117">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+					<property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+					<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+					<property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+					<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid"/>
+				</box>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="headerGridTitle" stretchType="ElementGroupBottom" mode="Opaque" x="0" y="0" width="46" height="18" backcolor="#E8E8E8" uuid="c0127d7e-f975-4fe8-b402-32d0edd0c01d">
+						<property name="com.jaspersoft.layout.grid.x" value="-1"/>
+						<property name="com.jaspersoft.layout.grid.y" value="-1"/>
+						<property name="com.jaspersoft.layout.grid.weight.x" value="0.5"/>
+						<property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+						<property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+						<property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+					</reportElement>
+					<textFieldExpression><![CDATA["车牌号码"]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
